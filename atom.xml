@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://newbg.cn/"/>
-  <updated>2019-09-28T15:12:04.389Z</updated>
+  <updated>2019-09-28T10:18:19.925Z</updated>
   <id>http://newbg.cn/</id>
   
   <author>
@@ -15,29 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>My New Post</title>
-    <link href="http://newbg.cn/2019/09/28/My-New-Post/"/>
-    <id>http://newbg.cn/2019/09/28/My-New-Post/</id>
-    <published>2019-09-28T15:11:33.000Z</published>
-    <updated>2019-09-28T15:12:04.389Z</updated>
-    
-    <content type="html"><![CDATA[<p><code>hello world</code></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;code&gt;hello world&lt;/code&gt;&lt;/p&gt;
-
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
   
   <entry>
     <title>Hello World</title>
