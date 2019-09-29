@@ -1,10 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>newbg.cn/2019/09/29/my-experience/</loc>
+    <loc>newbg.cn/algorithm/</loc>
     <lastmod>2019-09-29</lastmod>
   </url>  <url>
-    <loc>newbg.cn/2019/09/28/hello-world/</loc>
+    <loc>newbg.cn/test2/</loc>
+    <lastmod>2019-09-29</lastmod>
+  </url>  <url>
+    <loc>newbg.cn/newbg1/</loc>
+    <lastmod>2019-09-29</lastmod>
+  </url>  <url>
+    <loc>newbg.cn/test1/</loc>
+    <lastmod>2019-09-29</lastmod>
+  </url>  <url>
+    <loc>newbg.cn/demo/</loc>
+    <lastmod>2019-09-29</lastmod>
+  </url>  <url>
+    <loc>newbg.cn/my-experience/</loc>
+    <lastmod>2019-09-29</lastmod>
+  </url>  <url>
+    <loc>newbg.cn/hello-world/</loc>
     <lastmod>2019-09-28</lastmod>
   </url>
 </urlset>

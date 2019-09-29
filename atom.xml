@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Newbg</title>
   
-  <subtitle>略略略</subtitle>
+  <subtitle>爱编程,爱生活!</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="newbg.cn/"/>
-  <updated>2019-09-29T04:23:12.612Z</updated>
+  <updated>2019-09-29T10:13:12.830Z</updated>
   <id>newbg.cn/</id>
   
   <author>
@@ -17,9 +17,133 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>algorithm</title>
+    <link href="newbg.cn/algorithm/"/>
+    <id>newbg.cn/algorithm/</id>
+    <published>2019-09-29T10:12:18.000Z</published>
+    <updated>2019-09-29T10:13:12.830Z</updated>
+    
+    <content type="html"><![CDATA[<p>算法真有趣</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;算法真有趣&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+      <category term="算法" scheme="newbg.cn/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>newbg1</title>
+    <link href="newbg.cn/newbg1/"/>
+    <id>newbg.cn/newbg1/</id>
+    <published>2019-09-29T10:01:18.000Z</published>
+    <updated>2019-09-29T10:02:02.299Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="大萨达撒多"><a href="#大萨达撒多" class="headerlink" title="大萨达撒多"></a>大萨达撒多</h3>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;大萨达撒多&quot;&gt;&lt;a href=&quot;#大萨达撒多&quot; class=&quot;headerlink&quot; title=&quot;大萨达撒多&quot;&gt;&lt;/a&gt;大萨达撒多&lt;/h3&gt;
+      
+    
+    </summary>
+    
+    
+      <category term="vue" scheme="newbg.cn/categories/vue/"/>
+    
+    
+      <category term="前端" scheme="newbg.cn/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>test2</title>
+    <link href="newbg.cn/test2/"/>
+    <id>newbg.cn/test2/</id>
+    <published>2019-09-29T09:34:00.000Z</published>
+    <updated>2019-09-29T10:06:19.829Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="TEST2"><a href="#TEST2" class="headerlink" title="TEST2"></a>TEST2</h2>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;TEST2&quot;&gt;&lt;a href=&quot;#TEST2&quot; class=&quot;headerlink&quot; title=&quot;TEST2&quot;&gt;&lt;/a&gt;TEST2&lt;/h2&gt;
+      
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="newbg.cn/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="test" scheme="newbg.cn/tags/test/"/>
+    
+      <category term="前端" scheme="newbg.cn/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>test1</title>
+    <link href="newbg.cn/test1/"/>
+    <id>newbg.cn/test1/</id>
+    <published>2019-09-29T09:34:00.000Z</published>
+    <updated>2019-09-29T09:35:19.816Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="TEST1"><a href="#TEST1" class="headerlink" title="TEST1"></a>TEST1</h2>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;TEST1&quot;&gt;&lt;a href=&quot;#TEST1&quot; class=&quot;headerlink&quot; title=&quot;TEST1&quot;&gt;&lt;/a&gt;TEST1&lt;/h2&gt;
+      
+    
+    </summary>
+    
+    
+      <category term="test" scheme="newbg.cn/categories/test/"/>
+    
+      <category term="前端" scheme="newbg.cn/categories/test/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="test" scheme="newbg.cn/tags/test/"/>
+    
+      <category term="前端" scheme="newbg.cn/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>demo</title>
+    <link href="newbg.cn/demo/"/>
+    <id>newbg.cn/demo/</id>
+    <published>2019-09-29T04:45:05.000Z</published>
+    <updated>2019-09-29T04:45:05.193Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>my experience</title>
-    <link href="newbg.cn/2019/09/29/my-experience/"/>
-    <id>newbg.cn/2019/09/29/my-experience/</id>
+    <link href="newbg.cn/my-experience/"/>
+    <id>newbg.cn/my-experience/</id>
     <published>2019-09-29T04:22:27.000Z</published>
     <updated>2019-09-29T04:23:12.612Z</updated>
     
@@ -43,8 +167,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="newbg.cn/2019/09/28/hello-world/"/>
-    <id>newbg.cn/2019/09/28/hello-world/</id>
+    <link href="newbg.cn/hello-world/"/>
+    <id>newbg.cn/hello-world/</id>
     <published>2019-09-28T10:18:19.925Z</published>
     <updated>2019-09-28T10:18:19.925Z</updated>
     
