@@ -68,34 +68,6 @@
   </entry>
   
   <entry>
-    <title>test2</title>
-    <link href="newbg.cn/test2/"/>
-    <id>newbg.cn/test2/</id>
-    <published>2019-09-29T09:34:00.000Z</published>
-    <updated>2019-09-29T10:06:19.829Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="TEST2"><a href="#TEST2" class="headerlink" title="TEST2"></a>TEST2</h2>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;TEST2&quot;&gt;&lt;a href=&quot;#TEST2&quot; class=&quot;headerlink&quot; title=&quot;TEST2&quot;&gt;&lt;/a&gt;TEST2&lt;/h2&gt;
-      
-    
-    </summary>
-    
-    
-      <category term="前端" scheme="newbg.cn/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    
-      <category term="test" scheme="newbg.cn/tags/test/"/>
-    
-      <category term="前端" scheme="newbg.cn/tags/%E5%89%8D%E7%AB%AF/"/>
-    
-  </entry>
-  
-  <entry>
     <title>test1</title>
     <link href="newbg.cn/test1/"/>
     <id>newbg.cn/test1/</id>
@@ -117,6 +89,34 @@
       <category term="test" scheme="newbg.cn/categories/test/"/>
     
       <category term="前端" scheme="newbg.cn/categories/test/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="test" scheme="newbg.cn/tags/test/"/>
+    
+      <category term="前端" scheme="newbg.cn/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>test2</title>
+    <link href="newbg.cn/test2/"/>
+    <id>newbg.cn/test2/</id>
+    <published>2019-09-29T09:34:00.000Z</published>
+    <updated>2019-09-29T10:06:19.829Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="TEST2"><a href="#TEST2" class="headerlink" title="TEST2"></a>TEST2</h2>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;TEST2&quot;&gt;&lt;a href=&quot;#TEST2&quot; class=&quot;headerlink&quot; title=&quot;TEST2&quot;&gt;&lt;/a&gt;TEST2&lt;/h2&gt;
+      
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="newbg.cn/categories/%E5%89%8D%E7%AB%AF/"/>
     
     
       <category term="test" scheme="newbg.cn/tags/test/"/>
