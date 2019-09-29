@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Newbg的Blog</title>
+  <title>Hexo</title>
   
-  <subtitle>总结生活,记录美好</subtitle>
+  
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://newbg.cn/"/>
+  <link href="http://yoursite.com/"/>
   <updated>2019-09-28T10:18:19.925Z</updated>
-  <id>http://newbg.cn/</id>
+  <id>http://yoursite.com/</id>
   
   <author>
-    <name>Newbg</name>
+    <name>John Doe</name>
     
   </author>
   
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://newbg.cn/2019/09/28/hello-world/"/>
-    <id>http://newbg.cn/2019/09/28/hello-world/</id>
+    <link href="http://yoursite.com/2019/09/28/hello-world/"/>
+    <id>http://yoursite.com/2019/09/28/hello-world/</id>
     <published>2019-09-28T10:18:19.925Z</published>
     <updated>2019-09-28T10:18:19.925Z</updated>
     
