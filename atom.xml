@@ -5,9 +5,9 @@
   <subtitle>略略略</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="newbg.cn/"/>
   <updated>2019-09-29T04:23:12.612Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>newbg.cn/</id>
   
   <author>
     <name>Newbg</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>my experience</title>
-    <link href="http://yoursite.com/2019/09/29/my-experience/"/>
-    <id>http://yoursite.com/2019/09/29/my-experience/</id>
+    <link href="newbg.cn/2019/09/29/my-experience/"/>
+    <id>newbg.cn/2019/09/29/my-experience/</id>
     <published>2019-09-29T04:22:27.000Z</published>
     <updated>2019-09-29T04:23:12.612Z</updated>
     
@@ -37,14 +37,14 @@
     
     
     
-      <category term="算法" scheme="http://yoursite.com/tags/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="newbg.cn/tags/%E7%AE%97%E6%B3%95/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2019/09/28/hello-world/"/>
-    <id>http://yoursite.com/2019/09/28/hello-world/</id>
+    <link href="newbg.cn/2019/09/28/hello-world/"/>
+    <id>newbg.cn/2019/09/28/hello-world/</id>
     <published>2019-09-28T10:18:19.925Z</published>
     <updated>2019-09-28T10:18:19.925Z</updated>
     
