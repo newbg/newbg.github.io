@@ -56,19 +56,19 @@
   };
 </script>
 
-  <meta name="description" content="Vue中的组件传值父子组件传值首先需要在父组件中引入子组件并注册(挂载) 12345678910111213141516// 引入组件   挂载组件import HelloWorld from &quot;./components/HelloWorld.vue&quot;;//挂载组件  components: &amp;#123;    &quot;v-home&quot;: HelloWorld  &amp;#125;//使用子组件&amp;lt;v-ho">
-<meta name="keywords" content="vue">
+  <meta name="description" content="vue路由配置 安装 install vue-router --save```1234或者```cnpm install vue-router --save       引入并使用(main.js) 12345import VueRouter from &quot;vue-router&quot;Vue.use(VueRouter)         配置路由  创建组件,引入组件  定义路由   (建议复制) 123">
+<meta name="keywords" content="vue,前端">
 <meta property="og:type" content="article">
-<meta property="og:title" content="vue中的组件传值">
-<meta property="og:url" content="newbg.cn/vue中的组件传值/index.html">
+<meta property="og:title" content="vue路由基础">
+<meta property="og:url" content="newbg.cn/vue路由/index.html">
 <meta property="og:site_name" content="Newbg">
-<meta property="og:description" content="Vue中的组件传值父子组件传值首先需要在父组件中引入子组件并注册(挂载) 12345678910111213141516// 引入组件   挂载组件import HelloWorld from &quot;./components/HelloWorld.vue&quot;;//挂载组件  components: &amp;#123;    &quot;v-home&quot;: HelloWorld  &amp;#125;//使用子组件&amp;lt;v-ho">
+<meta property="og:description" content="vue路由配置 安装 install vue-router --save```1234或者```cnpm install vue-router --save       引入并使用(main.js) 12345import VueRouter from &quot;vue-router&quot;Vue.use(VueRouter)         配置路由  创建组件,引入组件  定义路由   (建议复制) 123">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-10-08T03:31:25.038Z">
+<meta property="og:updated_time" content="2019-10-11T02:50:27.562Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="vue中的组件传值">
-<meta name="twitter:description" content="Vue中的组件传值父子组件传值首先需要在父组件中引入子组件并注册(挂载) 12345678910111213141516// 引入组件   挂载组件import HelloWorld from &quot;./components/HelloWorld.vue&quot;;//挂载组件  components: &amp;#123;    &quot;v-home&quot;: HelloWorld  &amp;#125;//使用子组件&amp;lt;v-ho">
-  <link rel="canonical" href="newbg.cn/vue中的组件传值/">
+<meta name="twitter:title" content="vue路由基础">
+<meta name="twitter:description" content="vue路由配置 安装 install vue-router --save```1234或者```cnpm install vue-router --save       引入并使用(main.js) 12345import VueRouter from &quot;vue-router&quot;Vue.use(VueRouter)         配置路由  创建组件,引入组件  定义路由   (建议复制) 123">
+  <link rel="canonical" href="newbg.cn/vue路由/">
 
 
 <script id="page-configurations">
@@ -82,7 +82,7 @@
   };
 </script>
 
-  <title>vue中的组件传值 | Newbg</title>
+  <title>vue路由基础 | Newbg</title>
   
 
 
@@ -265,7 +265,7 @@
   
   
   <div class="post-block post">
-    <link itemprop="mainEntityOfPage" href="newbg.cn/vue中的组件传值/">
+    <link itemprop="mainEntityOfPage" href="newbg.cn/vue路由/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Newbg">
@@ -277,7 +277,7 @@
       <meta itemprop="name" content="Newbg">
     </span>
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">vue中的组件传值
+        <h1 class="post-title" itemprop="name headline">vue路由基础
 
           
         </h1>
@@ -293,7 +293,7 @@
                 
               
 
-              <time title="创建时间：2019-10-08 10:51:52 / 修改时间：11:31:25" itemprop="dateCreated datePublished" datetime="2019-10-08T10:51:52+08:00">2019-10-08</time>
+              <time title="创建时间：2019-10-11 09:20:09 / 修改时间：10:50:27" itemprop="dateCreated datePublished" datetime="2019-10-11T09:20:09+08:00">2019-10-11</time>
             </span>
           
             
@@ -325,18 +325,45 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="Vue中的组件传值"><a href="#Vue中的组件传值" class="headerlink" title="Vue中的组件传值"></a>Vue中的组件传值</h1><h2 id="父子组件传值"><a href="#父子组件传值" class="headerlink" title="父子组件传值"></a>父子组件传值</h2><p>首先需要在父组件中引入子组件并注册(挂载)</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 引入组件   挂载组件</span></span><br><span class="line"><span class="keyword">import</span> HelloWorld <span class="keyword">from</span> <span class="string">"./components/HelloWorld.vue"</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">//挂载组件</span></span><br><span class="line">  components: &#123;</span><br><span class="line">    <span class="string">"v-home"</span>: HelloWorld</span><br><span class="line">  &#125;</span><br><span class="line"><span class="comment">//使用子组件</span></span><br><span class="line">&lt;v-home&gt;<span class="xml"><span class="tag">&lt;/<span class="name">v-home</span>&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment">//如果想要在调用子组件的同时给子组件传值</span></span><br><span class="line"><span class="comment">//1. 在使用子组件的时候绑定属性 </span></span><br><span class="line"><span class="comment">//		&lt;v-home :title = "title"&gt;&lt;/v-home&gt;</span></span><br><span class="line"><span class="comment">//2. 在子组件中定义属性接收父组件的传值</span></span><br><span class="line"><span class="comment">//		props: ["title"]</span></span><br><span class="line"><span class="comment">//ps:如果子组件和父组件含有同名的变量,以父组件为主,但尽量不要这样用</span></span><br></pre></td></tr></table></figure>
+        <h1 id="vue路由配置"><a href="#vue路由配置" class="headerlink" title="vue路由配置"></a>vue路由配置</h1><ol>
+<li><p>安装</p>
+<figure class="highlight plain"><figcaption><span>install vue-router --save```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">或者</span><br><span class="line"></span><br><span class="line">```cnpm install vue-router --save</span><br></pre></td></tr></table></figure>
 
-<a id="more"></a>
 
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//如果想在子组件调用父组件的方法</span></span><br><span class="line"><span class="comment">//比如父组件中有一个run方法</span></span><br><span class="line"><span class="comment">//    run(data) &#123;</span></span><br><span class="line"><span class="comment">//      alert("我是父组件的run方法" + data);</span></span><br><span class="line"><span class="comment">//    &#125;</span></span><br><span class="line"><span class="comment">//1. 同样的方法 &lt;v-header :title="title" :run="run"&gt;&lt;/v-header&gt;</span></span><br><span class="line"><span class="comment">//2. 子组件接收  props: ["title", "run"]</span></span><br><span class="line"><span class="comment">//3. 用Button组件进行测试  &lt;button @click="run(666)"&gt;调用父组件的方法&lt;/button&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//:home="this" 可以把整个父组件传过去</span></span><br></pre></td></tr></table></figure>
 
-<h2 id="非父子组件传值"><a href="#非父子组件传值" class="headerlink" title="非父子组件传值"></a>非父子组件传值</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 1.新建一个js文件 然后引入vue 实例化vue 最后暴露这个实例</span></span><br><span class="line"></span><br><span class="line">	<span class="keyword">import</span> Vue <span class="keyword">from</span> <span class="string">'vue'</span></span><br><span class="line"></span><br><span class="line">	<span class="keyword">var</span> vueEvent = <span class="keyword">new</span> Vue();</span><br><span class="line"></span><br><span class="line">	<span class="keyword">export</span> <span class="keyword">default</span> vueEvent;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 2.在要广播的地方引入刚才定义的实例   </span></span><br><span class="line">    <span class="keyword">import</span> Bus <span class="keyword">from</span> <span class="string">'../bus.js'</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 3.通过vueEvent.$emit('名称',数据)</span></span><br><span class="line">    <span class="keyword">import</span> Bus <span class="keyword">from</span> <span class="string">'../bus.js'</span>;</span><br><span class="line">	<span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">      name: <span class="string">'first'</span>,</span><br><span class="line">      data () &#123;</span><br><span class="line">        <span class="keyword">return</span> &#123;</span><br><span class="line">          value: <span class="string">'我来自first.vue组件！'</span></span><br><span class="line">        &#125;</span><br><span class="line">      &#125;,</span><br><span class="line">      methods:&#123;</span><br><span class="line">        add()&#123;<span class="comment">// 定义add方法，并将msg通过txt传给second组件</span></span><br><span class="line">          Bus.$emit(<span class="string">'txt'</span>,<span class="keyword">this</span>.value);</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 4.在接收数据的地方通过</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// vueEvent.$on('名称',function(data) &#123;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// &#125;)</span></span><br><span class="line">    <span class="keyword">import</span> Bus <span class="keyword">from</span> <span class="string">'../bus.js'</span>;</span><br><span class="line">    <span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">      name: <span class="string">'second'</span>,</span><br><span class="line">      data () &#123;</span><br><span class="line">        <span class="keyword">return</span> &#123;</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;,</span><br><span class="line">      mounted:<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        Bus.$on(<span class="string">'txt'</span>,<span class="function"><span class="keyword">function</span>(<span class="params">val</span>)</span>&#123;<span class="comment">//监听first组件的txt事件</span></span><br><span class="line">          <span class="built_in">console</span>.log(val);</span><br><span class="line">        &#125;);</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<ol start="2">
+<li><p>引入并使用(main.js)</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> VueRouter <span class="keyword">from</span> <span class="string">"vue-router"</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">Vue.use(VueRouter)</span><br></pre></td></tr></table></figure>
 
-<h2 id="父组件主动获取子组件数据"><a href="#父组件主动获取子组件数据" class="headerlink" title="父组件主动获取子组件数据"></a>父组件主动获取子组件数据</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//1.调用子组件的时候定义一个ref</span></span><br><span class="line"><span class="comment">//&lt;v-header ref="header"&gt;&lt;/v-header&gt;</span></span><br><span class="line">	&lt;v-home :title=<span class="string">"title"</span> :home=<span class="string">"this"</span> ref=<span class="string">"home"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">v-home</span>&gt;</span></span></span><br><span class="line"><span class="comment">//2.在父组件this.$refs.header.属性/方法</span></span><br><span class="line">	 getChildData() &#123;</span><br><span class="line">      <span class="built_in">console</span>.log(<span class="keyword">this</span>.$refs.home.msg);  <span class="comment">//子组件属性</span></span><br><span class="line">      <span class="keyword">this</span>.$refs.home.run(<span class="string">"newbg"</span>);  <span class="comment">//子组件方法</span></span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
 
-<h2 id="子组件主动获取父组件数据的方法"><a href="#子组件主动获取父组件数据的方法" class="headerlink" title="子组件主动获取父组件数据的方法"></a>子组件主动获取父组件数据的方法</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//this.$parent.数据/方法</span></span><br><span class="line">    getParent() &#123;</span><br><span class="line">      <span class="built_in">console</span>.log(<span class="keyword">this</span>.$parent.title + <span class="string">"------子组件主动获取父组件的数据"</span>);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ol>
+<ol start="3">
+<li><p>配置路由</p>
+<ul>
+<li><p>创建组件,引入组件</p>
+</li>
+<li><p>定义路由   (建议复制)</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> routes = &#123;</span><br><span class="line">  <span class="string">'/'</span>: Home,</span><br><span class="line">  <span class="string">'/about'</span>: About</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>实例化VueRouter</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> router = <span class="keyword">new</span> VueRouter&#123;(</span><br><span class="line">	routes   <span class="comment">//详单与routes: routes</span></span><br><span class="line">)&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>挂载</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">new</span> Vue(&#123;</span><br><span class="line">  el: <span class="string">'#app'</span>,</span><br><span class="line">  router,</span><br><span class="line">  render: <span class="function"><span class="params">h</span> =&gt;</span> h(App)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+</li>
+</ol>
+<h1 id="路由的简单用法"><a href="#路由的简单用法" class="headerlink" title="路由的简单用法"></a>路由的简单用法</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> Vue <span class="keyword">from</span> <span class="string">'vue'</span></span><br><span class="line"><span class="keyword">import</span> App <span class="keyword">from</span> <span class="string">'./App.vue'</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> VueRouter <span class="keyword">from</span> <span class="string">'vue-router'</span></span><br><span class="line"></span><br><span class="line">Vue.use(VueRouter);</span><br><span class="line"></span><br><span class="line"><span class="comment">//1.创建组件</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> Home <span class="keyword">from</span> <span class="string">"./components/Home.vue"</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> News <span class="keyword">from</span> <span class="string">"./components/News.vue"</span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">//2. 配置路由</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> routes = [</span><br><span class="line">  &#123; <span class="attr">path</span>: <span class="string">'/home'</span>, <span class="attr">component</span>: Home &#125;,</span><br><span class="line">  &#123; <span class="attr">path</span>: <span class="string">'/news'</span>, <span class="attr">component</span>: News &#125;,</span><br><span class="line">  <span class="comment">// &#123; path: '*', redirect: '/home' &#125;</span></span><br><span class="line">]</span><br><span class="line"></span><br><span class="line"><span class="comment">//3.实例化VueRouter</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> router = <span class="keyword">new</span> VueRouter(&#123;</span><br><span class="line">  routes</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment">//4. 挂载路由</span></span><br><span class="line"><span class="keyword">new</span> Vue(&#123;</span><br><span class="line">  el: <span class="string">'#app'</span>,</span><br><span class="line">  router,</span><br><span class="line">  render: <span class="function"><span class="params">h</span> =&gt;</span> h(App)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">//5. &lt; router-view &gt; &lt;/router-view&gt;放在根组件app</span><br><span class="line"></span><br><span class="line">&lt;template&gt;</span><br><span class="line">  &lt;div id=&quot;app&quot;&gt;</span><br><span class="line">    &lt;router-link to=&quot;/home&quot;&gt;首页&lt;/router-link&gt;</span><br><span class="line">    &lt;router-link to=&quot;/news&quot;&gt;新闻&lt;/router-link&gt;</span><br><span class="line">    &lt;hr&gt;</span><br><span class="line">    &lt;router-view&gt;</span><br><span class="line">    &lt;/router-view&gt;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">&lt;/template&gt;</span><br></pre></td></tr></table></figure>
 
 
     </div>
@@ -388,6 +415,8 @@
             
               <a href="/tags/vue/" rel="tag"># vue</a>
             
+              <a href="/tags/前端/" rel="tag"># 前端</a>
+            
           </div>
         
 
@@ -396,8 +425,8 @@
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
               
-                <a href="/最大子列和问题/" rel="next" title="最大子列和问题">
-                  <i class="fa fa-chevron-left"></i> 最大子列和问题
+                <a href="/vue中的组件传值/" rel="next" title="vue中的组件传值">
+                  <i class="fa fa-chevron-left"></i> vue中的组件传值
                 </a>
               
             </div>
@@ -405,10 +434,6 @@
             <span class="post-nav-divider"></span>
 
             <div class="post-nav-prev post-nav-item">
-              
-                <a href="/vue路由/" rel="prev" title="vue路由基础">
-                  vue路由基础 <i class="fa fa-chevron-right"></i>
-                </a>
               
             </div>
           </div>
@@ -457,7 +482,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Vue中的组件传值"><span class="nav-number">1.</span> <span class="nav-text">Vue中的组件传值</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#父子组件传值"><span class="nav-number">1.1.</span> <span class="nav-text">父子组件传值</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#非父子组件传值"><span class="nav-number">1.2.</span> <span class="nav-text">非父子组件传值</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#父组件主动获取子组件数据"><span class="nav-number">1.3.</span> <span class="nav-text">父组件主动获取子组件数据</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#子组件主动获取父组件数据的方法"><span class="nav-number">1.4.</span> <span class="nav-text">子组件主动获取父组件数据的方法</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#vue路由配置"><span class="nav-number">1.</span> <span class="nav-text">vue路由配置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#路由的简单用法"><span class="nav-number">2.</span> <span class="nav-text">路由的简单用法</span></a></li></ol></div>
         
       </div>
       <!--/noindex-->

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="newbg.cn/"/>
-  <updated>2019-10-08T03:31:25.038Z</updated>
+  <updated>2019-10-11T02:50:27.562Z</updated>
   <id>newbg.cn/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>vue路由基础</title>
+    <link href="newbg.cn/vue%E8%B7%AF%E7%94%B1/"/>
+    <id>newbg.cn/vue路由/</id>
+    <published>2019-10-11T01:20:09.000Z</published>
+    <updated>2019-10-11T02:50:27.562Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="vue路由配置"><a href="#vue路由配置" class="headerlink" title="vue路由配置"></a>vue路由配置</h1><ol><li><p>安装</p><figure class="highlight plain"><figcaption><span>install vue-router --save```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">或者</span><br><span class="line"></span><br><span class="line">```cnpm install vue-router --save</span><br></pre></td></tr></table></figure></li></ol><ol start="2"><li><p>引入并使用(main.js)</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> VueRouter <span class="keyword">from</span> <span class="string">"vue-router"</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">Vue.use(VueRouter)</span><br></pre></td></tr></table></figure></li></ol><ol start="3"><li><p>配置路由</p><ul><li><p>创建组件,引入组件</p></li><li><p>定义路由   (建议复制)</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> routes = &#123;</span><br><span class="line">  <span class="string">'/'</span>: Home,</span><br><span class="line">  <span class="string">'/about'</span>: About</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li><li><p>实例化VueRouter</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> router = <span class="keyword">new</span> VueRouter&#123;(</span><br><span class="line">routes   <span class="comment">//详单与routes: routes</span></span><br><span class="line">)&#125;</span><br></pre></td></tr></table></figure></li><li><p>挂载</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">new</span> Vue(&#123;</span><br><span class="line">  el: <span class="string">'#app'</span>,</span><br><span class="line">  router,</span><br><span class="line">  render: <span class="function"><span class="params">h</span> =&gt;</span> h(App)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></li></ul></li></ol><h1 id="路由的简单用法"><a href="#路由的简单用法" class="headerlink" title="路由的简单用法"></a>路由的简单用法</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> Vue <span class="keyword">from</span> <span class="string">'vue'</span></span><br><span class="line"><span class="keyword">import</span> App <span class="keyword">from</span> <span class="string">'./App.vue'</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> VueRouter <span class="keyword">from</span> <span class="string">'vue-router'</span></span><br><span class="line"></span><br><span class="line">Vue.use(VueRouter);</span><br><span class="line"></span><br><span class="line"><span class="comment">//1.创建组件</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> Home <span class="keyword">from</span> <span class="string">"./components/Home.vue"</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> News <span class="keyword">from</span> <span class="string">"./components/News.vue"</span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">//2. 配置路由</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> routes = [</span><br><span class="line">  &#123; <span class="attr">path</span>: <span class="string">'/home'</span>, <span class="attr">component</span>: Home &#125;,</span><br><span class="line">  &#123; <span class="attr">path</span>: <span class="string">'/news'</span>, <span class="attr">component</span>: News &#125;,</span><br><span class="line">  <span class="comment">// &#123; path: '*', redirect: '/home' &#125;</span></span><br><span class="line">]</span><br><span class="line"></span><br><span class="line"><span class="comment">//3.实例化VueRouter</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> router = <span class="keyword">new</span> VueRouter(&#123;</span><br><span class="line">  routes</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment">//4. 挂载路由</span></span><br><span class="line"><span class="keyword">new</span> Vue(&#123;</span><br><span class="line">  el: <span class="string">'#app'</span>,</span><br><span class="line">  router,</span><br><span class="line">  render: <span class="function"><span class="params">h</span> =&gt;</span> h(App)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">//5. &lt; router-view &gt; &lt;/router-view&gt;放在根组件app</span><br><span class="line"></span><br><span class="line">&lt;template&gt;</span><br><span class="line">  &lt;div id=&quot;app&quot;&gt;</span><br><span class="line">    &lt;router-link to=&quot;/home&quot;&gt;首页&lt;/router-link&gt;</span><br><span class="line">    &lt;router-link to=&quot;/news&quot;&gt;新闻&lt;/router-link&gt;</span><br><span class="line">    &lt;hr&gt;</span><br><span class="line">    &lt;router-view&gt;</span><br><span class="line">    &lt;/router-view&gt;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">&lt;/template&gt;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;vue路由配置&quot;&gt;&lt;a href=&quot;#vue路由配置&quot; class=&quot;headerlink&quot; title=&quot;vue路由配置&quot;&gt;&lt;/a&gt;vue路由配置&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;安装&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;f
+      
+    
+    </summary>
+    
+    
+      <category term="vue" scheme="newbg.cn/categories/vue/"/>
+    
+    
+      <category term="vue" scheme="newbg.cn/tags/vue/"/>
+    
+      <category term="前端" scheme="newbg.cn/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>vue中的组件传值</title>
