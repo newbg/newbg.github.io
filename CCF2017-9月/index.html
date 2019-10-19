@@ -64,7 +64,7 @@
 <meta property="og:site_name" content="Newbg">
 <meta property="og:description" content="CCF2017-9月1.打酱油问题描述 　　小明带着N元钱去买酱油。酱油10块钱一瓶，商家进行促销，每买3瓶送1瓶，或者每买5瓶送2瓶。请问小明最多可以得到多少瓶酱油。 输入格式 　　输入的第一行包含一个整数N，表示小明可用于买酱油的钱数。N是10的整数倍，N不超过300。 输出格式 　　输出一个整数，表示小明最多可以得到多少瓶酱油。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-10-17T14:27:14.844Z">
+<meta property="og:updated_time" content="2019-10-19T13:43:18.839Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CCF2017-9月">
 <meta name="twitter:description" content="CCF2017-9月1.打酱油问题描述 　　小明带着N元钱去买酱油。酱油10块钱一瓶，商家进行促销，每买3瓶送1瓶，或者每买5瓶送2瓶。请问小明最多可以得到多少瓶酱油。 输入格式 　　输入的第一行包含一个整数N，表示小明可用于买酱油的钱数。N是10的整数倍，N不超过300。 输出格式 　　输出一个整数，表示小明最多可以得到多少瓶酱油。">
@@ -304,7 +304,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-10-17 22:27:14" itemprop="dateModified" datetime="2019-10-17T22:27:14+08:00">2019-10-17</time>
+                <time title="修改时间：2019-10-19 21:43:18" itemprop="dateModified" datetime="2019-10-19T21:43:18+08:00">2019-10-19</time>
               </span>
             
           
@@ -403,7 +403,7 @@
 4. 当遇到右括号的时候,嵌套回退一层</code></pre><p>参考代码:</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;string&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;map&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="built_in">map</span>&lt;<span class="built_in">string</span>, <span class="built_in">string</span>&gt; ans,stf;  <span class="comment">// 存储键值对,以及继承关系(对象的嵌套)</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="built_in">string</span> <span class="title">get</span><span class="params">(<span class="keyword">int</span> &amp;i, <span class="built_in">string</span> str)</span> </span>&#123;</span><br><span class="line">	<span class="built_in">string</span> s;</span><br><span class="line">	<span class="keyword">while</span>(str[i++] &amp;&amp; str[i] != <span class="string">'"'</span>) </span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span>(str[i] == <span class="string">'\\'</span>)</span><br><span class="line">			s += str[++i];</span><br><span class="line">		<span class="keyword">else</span></span><br><span class="line">			s += str[i];	</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> s;</span><br><span class="line">&#125; </span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> n,m;</span><br><span class="line">	<span class="built_in">string</span> s,str,name,key,val;</span><br><span class="line">	</span><br><span class="line"><span class="comment">//	cin&gt;&gt;n&gt;&gt;m;</span></span><br><span class="line">	(<span class="built_in">cin</span> &gt;&gt; n &gt;&gt; m).get();  <span class="comment">////注意读取换行符，否则影响之后的处理</span></span><br><span class="line">	</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>;i &lt; n; i++) &#123;</span><br><span class="line"><span class="comment">//		cin&gt;&gt;s;</span></span><br><span class="line"></span><br><span class="line">		getline(<span class="built_in">cin</span>, s);</span><br><span class="line">		str += s;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; str.size()<span class="number">-1</span>; i++) &#123;</span><br><span class="line">		<span class="keyword">if</span>(str[i] == <span class="string">' '</span>||str[i] == <span class="string">','</span>)</span><br><span class="line">			<span class="keyword">continue</span>;</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span>(str[i] == <span class="string">'"'</span>) &#123;</span><br><span class="line">			key = get(i,str);  <span class="comment">// 获取键 </span></span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span>(str[i] == <span class="string">':'</span>) &#123;</span><br><span class="line">			<span class="keyword">while</span>(str[++i] == <span class="string">' '</span>) <span class="keyword">continue</span>;</span><br><span class="line">			<span class="keyword">if</span>(str[i] == <span class="string">'"'</span>)</span><br><span class="line">			&#123;</span><br><span class="line">				val = get(i,str);</span><br><span class="line">				ans[name + <span class="string">'.'</span> + key] = val;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">else</span> <span class="keyword">if</span>(str[i] == <span class="string">'&#123;'</span>) &#123;</span><br><span class="line">				ans[name + <span class="string">'.'</span> + key] = <span class="string">"OBJECT"</span>;</span><br><span class="line">				stf[name + <span class="string">'.'</span> + key] = name;  <span class="comment">// 保存父亲键名,后面回退会用到 </span></span><br><span class="line">				name += (<span class="string">'.'</span> + key); <span class="comment">// 更新对象嵌套关系 </span></span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span>(str[i] == <span class="string">'&#125;'</span>) </span><br><span class="line">			name = stf[name]; <span class="comment">// 对象完毕,向前回退	</span></span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">while</span>(m--) &#123;</span><br><span class="line">		<span class="built_in">cin</span>&gt;&gt;s;</span><br><span class="line">		s = <span class="string">'.'</span> + s;</span><br><span class="line">		<span class="keyword">if</span>(ans[s] == <span class="string">""</span>)</span><br><span class="line">			<span class="built_in">cout</span>&lt;&lt;<span class="string">"NOTEXIST"</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span> (ans[s] == <span class="string">"OBJECT"</span>)</span><br><span class="line">			<span class="built_in">cout</span> &lt;&lt; ans[s] &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">		<span class="keyword">else</span></span><br><span class="line">			<span class="built_in">cout</span> &lt;&lt; <span class="string">"STRING "</span> &lt;&lt; ans[s] &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">	&#125; </span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-
+<h2 id="4-通信网络"><a href="#4-通信网络" class="headerlink" title="4. 通信网络"></a>4. 通信网络</h2>
     </div>
 
     
@@ -524,7 +524,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#CCF2017-9月"><span class="nav-number">1.</span> <span class="nav-text">CCF2017-9月</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-打酱油"><span class="nav-number">1.0.1.</span> <span class="nav-text">1.打酱油</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-公共钥匙盒"><span class="nav-number">1.0.2.</span> <span class="nav-text">2. 公共钥匙盒</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-JSON查询"><span class="nav-number">1.0.3.</span> <span class="nav-text">3 .JSON查询</span></a></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#CCF2017-9月"><span class="nav-number">1.</span> <span class="nav-text">CCF2017-9月</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-打酱油"><span class="nav-number">1.0.1.</span> <span class="nav-text">1.打酱油</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-公共钥匙盒"><span class="nav-number">1.0.2.</span> <span class="nav-text">2. 公共钥匙盒</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-JSON查询"><span class="nav-number">1.0.3.</span> <span class="nav-text">3 .JSON查询</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-通信网络"><span class="nav-number">1.1.</span> <span class="nav-text">4. 通信网络</span></a></li></ol></li></ol></div>
         
       </div>
       <!--/noindex-->
@@ -540,7 +540,7 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-count">8</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -566,7 +566,7 @@
             <a href="/tags/">
           
         
-        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-count">9</span>
         <span class="site-state-item-name">标签</span>
         </a>
       </div>
@@ -654,7 +654,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共8.3k字</span>
+  <span class="post-count">博客全站共8.6k字</span>
 </div>
         
 
