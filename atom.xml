@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="newbg.cn/"/>
-  <updated>2019-10-20T02:22:45.764Z</updated>
+  <updated>2019-10-20T02:52:35.428Z</updated>
   <id>newbg.cn/</id>
   
   <author>
@@ -15,6 +15,21 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>求星期问题</title>
+    <link href="newbg.cn/%E6%B1%82%E6%98%9F%E6%9C%9F%E9%97%AE%E9%A2%98-1/"/>
+    <id>newbg.cn/求星期问题-1/</id>
+    <published>2019-10-20T02:52:35.000Z</published>
+    <updated>2019-10-20T02:52:35.428Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>stringstream用法</title>
