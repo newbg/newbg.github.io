@@ -56,19 +56,19 @@
   };
 </script>
 
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
-<meta name="keywords" content="Hexo">
+  <meta name="description" content="tarjan求强连通分量点击跳转至原文 1. 引子如果有一道题如下,你会处理吗? 输入：一个图有向图。输出：它每个强连通分量。">
+<meta name="keywords" content="算法,有向图,转载">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="newbg.cn/hello-world/index.html">
+<meta property="og:title" content="tarjan求强连通分量">
+<meta property="og:url" content="newbg.cn/tarjan求强连通分量/index.html">
 <meta property="og:site_name" content="Newbg">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="tarjan求强连通分量点击跳转至原文 1. 引子如果有一道题如下,你会处理吗? 输入：一个图有向图。输出：它每个强连通分量。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-09-30T08:41:53.531Z">
+<meta property="og:updated_time" content="2019-10-27T03:40:42.750Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
-  <link rel="canonical" href="newbg.cn/hello-world/">
+<meta name="twitter:title" content="tarjan求强连通分量">
+<meta name="twitter:description" content="tarjan求强连通分量点击跳转至原文 1. 引子如果有一道题如下,你会处理吗? 输入：一个图有向图。输出：它每个强连通分量。">
+  <link rel="canonical" href="newbg.cn/tarjan求强连通分量/">
 
 
 <script id="page-configurations">
@@ -82,7 +82,7 @@
   };
 </script>
 
-  <title>Hello World | Newbg</title>
+  <title>tarjan求强连通分量 | Newbg</title>
   
 
 
@@ -265,7 +265,7 @@
   
   
   <div class="post-block post">
-    <link itemprop="mainEntityOfPage" href="newbg.cn/hello-world/">
+    <link itemprop="mainEntityOfPage" href="newbg.cn/tarjan求强连通分量/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Newbg">
@@ -277,7 +277,7 @@
       <meta itemprop="name" content="Newbg">
     </span>
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">Hello World
+        <h1 class="post-title" itemprop="name headline">tarjan求强连通分量
 
           
         </h1>
@@ -293,19 +293,11 @@
                 
               
 
-              <time title="创建时间：2019-09-28 18:18:19" itemprop="dateCreated datePublished" datetime="2019-09-28T18:18:19+08:00">2019-09-28</time>
+              <time title="创建时间：2019-10-27 09:17:04 / 修改时间：11:40:42" itemprop="dateCreated datePublished" datetime="2019-10-27T09:17:04+08:00">2019-10-27</time>
             </span>
           
             
 
-            
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-09-30 16:41:53" itemprop="dateModified" datetime="2019-09-30T16:41:53+08:00">2019-09-30</time>
-              </span>
             
           
             <span class="post-meta-item">
@@ -314,7 +306,7 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/杂七杂八/" itemprop="url" rel="index"><span itemprop="name">杂七杂八</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/算法/" itemprop="url" rel="index"><span itemprop="name">算法</span></a></span>
 
                 
                 
@@ -333,21 +325,32 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+        <h2 id="tarjan求强连通分量"><a href="#tarjan求强连通分量" class="headerlink" title="tarjan求强连通分量"></a>tarjan求强连通分量</h2><p><a href="https://blog.csdn.net/qq_34374664/article/details/77488976" target="_blank" rel="noopener">点击跳转至原文</a></p>
+<h3 id="1-引子"><a href="#1-引子" class="headerlink" title="1. 引子"></a>1. 引子</h3><p>如果有一道题如下,你会处理吗?</p>
+<p><strong>输入：<br>一个图有向图。<br>输出：<br>它每个强连通分量。</strong></p>
 <a id="more"></a>
 
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>input:</p>
+<p>6 8</p>
+<p>1 3</p>
+<p>1 2</p>
+<p>2 4</p>
+<p>3 4</p>
+<p>3 5</p>
+<p>4 6</p>
+<p>4 1</p>
+<p>5 6</p>
+<p>output:</p>
+<p>6</p>
+<p>5</p>
+<p>3 4 2 1</p>
+<h3 id="2-tarjan"><a href="#2-tarjan" class="headerlink" title="2. tarjan"></a>2. tarjan</h3><p>强连通(strongly connected)： 在一个有向图G里，设两个点 a b 发现，由a有一条路可以走到b，由b又有一条路可以走到a，我们就叫这两个顶点（a，b）强连通。</p>
+<p>强连通图： 如果 在一个有向图G中，每两个点都强连通，我们就叫这个图，强连通图。</p>
+<p>强连通分量strongly connected components)：在一个有向图G中，有一个子图，这个子图每2个点都满足强连通，我们就叫这个子图叫做 强连通分量</p>
+<p>tarjan算法，之所以用DFS就是因为它将每一个强连通分量作为搜索树上的一个子树。而这个图，就是一个完整的搜索树。<br>为了使这颗搜索树在遇到强连通分量的节点的时候能顺利进行。每个点都有两个参数。<br>1，DFN［］作为这个点搜索的次序编号（时间戳），简单来说就是 第几个被搜索到的。％每个点的时间戳都不一样％。<br>2，LOW［］作为每个点在这颗树中的，最小的子树的根，每次保证最小，like它的父亲结点的时间戳这种感觉。如果它自己的LOW［］最小，那这个点就应该从新分配，变成这个强连通分量子树的根节点。<br>ps：每次找到一个新点，这个点LOW［］＝DFN［］。</p>
+<p>而为了存储整个强连通分量，这里挑选的容器是，堆栈。每次一个新节点出现，就进站，如果这个点有 出度 就继续往下找。直到找到底，每次返回上来都看一看子节点与这个节点的LOW值，谁小就取谁，保证最小的子树根。如果找到DFN［］＝＝LOW［］就说明这个节点是这个强连通分量的根节点（毕竟这个LOW［］值是这个强连通分量里最小的。）最后找到强连通分量的节点后，就将这个栈里，比此节点后进来的节点全部出栈，它们就组成一个全新的强连通分量。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"> <span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"> <span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;string.h&gt;</span></span></span><br><span class="line"> <span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"> <span class="class"><span class="keyword">struct</span> <span class="title">node</span> &#123;</span></span><br><span class="line">     <span class="keyword">int</span> v,next;</span><br><span class="line"> &#125;edge[<span class="number">1001</span>];</span><br><span class="line">  <span class="keyword">int</span> DFN[<span class="number">1001</span>],LOW[<span class="number">1001</span>];</span><br><span class="line"> <span class="keyword">int</span> <span class="built_in">stack</span>[<span class="number">1001</span>],heads[<span class="number">1001</span>],visit[<span class="number">1001</span>],cnt,tot,index;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">add</span><span class="params">(<span class="keyword">int</span> x,<span class="keyword">int</span> y)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">     edge[++cnt].next=heads[x];</span><br><span class="line">     edge[cnt].v = y;</span><br><span class="line">     heads[x]=cnt;</span><br><span class="line">    <span class="keyword">return</span> ;</span><br><span class="line"> &#125;</span><br><span class="line"> <span class="function"><span class="keyword">void</span> <span class="title">tarjan</span><span class="params">(<span class="keyword">int</span> x)</span><span class="comment">//代表第几个点在处理。递归的是点。</span></span></span><br><span class="line"><span class="function"> </span>&#123;</span><br><span class="line">     DFN[x]=LOW[x]=++tot;<span class="comment">// 新进点的初始化。</span></span><br><span class="line">     <span class="built_in">stack</span>[++index]=x;<span class="comment">//进站</span></span><br><span class="line">     visit[x]=<span class="number">1</span>;<span class="comment">//表示在栈里</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=heads[x];i!=<span class="number">-1</span>;i=edge[i].next)</span><br><span class="line">     &#123;</span><br><span class="line">         <span class="keyword">if</span>(!DFN[edge[i].v]) &#123;<span class="comment">//如果没访问过</span></span><br><span class="line">            tarjan(edge[i].v);<span class="comment">//往下进行延伸，开始递归</span></span><br><span class="line">             LOW[x]=min(LOW[x],LOW[edge[i].v]);<span class="comment">//递归出来，比较谁是谁的儿子／父亲，就是树的对应关系，涉及到强连通分量子树最小根的事情。</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(visit[edge[i].v ])&#123;  <span class="comment">//如果访问过，并且还在栈里。</span></span><br><span class="line">             LOW[x]=min(LOW[x],DFN[edge[i].v]);<span class="comment">//比较谁是谁的儿子／父亲。就是链接对应关系</span></span><br><span class="line">         &#125;</span><br><span class="line">     &#125;</span><br><span class="line">     <span class="keyword">if</span>(LOW[x]==DFN[x]) <span class="comment">//发现是整个强连通分量子树里的最小根。</span></span><br><span class="line">    &#123;</span><br><span class="line">         <span class="keyword">do</span>&#123;</span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">"%d "</span>,<span class="built_in">stack</span>[index]);</span><br><span class="line">             visit[<span class="built_in">stack</span>[index]]=<span class="number">0</span>;</span><br><span class="line">             index--;</span><br><span class="line">         &#125;<span class="keyword">while</span>(x!=<span class="built_in">stack</span>[index+<span class="number">1</span>]);<span class="comment">//出栈，并且输出。</span></span><br><span class="line">         <span class="built_in">printf</span>(<span class="string">"\n"</span>);</span><br><span class="line">     &#125;</span><br><span class="line">     <span class="keyword">return</span> ;</span><br><span class="line"> &#125;</span><br><span class="line"> <span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"> </span>&#123;</span><br><span class="line">     <span class="built_in">memset</span>(heads,<span class="number">-1</span>,<span class="keyword">sizeof</span>(heads));</span><br><span class="line">     <span class="keyword">int</span> n,m;</span><br><span class="line">     <span class="built_in">scanf</span>(<span class="string">"%d%d"</span>,&amp;n,&amp;m);</span><br><span class="line">    <span class="keyword">int</span> x,y;</span><br><span class="line">     <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=m;i++)</span><br><span class="line">     &#123;</span><br><span class="line">         <span class="built_in">scanf</span>(<span class="string">"%d%d"</span>,&amp;x,&amp;y);</span><br><span class="line">        add(x,y);</span><br><span class="line">     &#125;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">         <span class="keyword">if</span>(!DFN[i])  tarjan(i);<span class="comment">//当这个点没有访问过，就从此点开始。防止图没走完</span></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 
     </div>
 
@@ -396,7 +399,11 @@
           
           <div class="post-tags">
             
-              <a href="/tags/Hexo/" rel="tag"># Hexo</a>
+              <a href="/tags/算法/" rel="tag"># 算法</a>
+            
+              <a href="/tags/有向图/" rel="tag"># 有向图</a>
+            
+              <a href="/tags/转载/" rel="tag"># 转载</a>
             
           </div>
         
@@ -406,15 +413,15 @@
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
               
+                <a href="/求星期问题/" rel="next" title="求星期问题">
+                  <i class="fa fa-chevron-left"></i> 求星期问题
+                </a>
+              
             </div>
 
             <span class="post-nav-divider"></span>
 
             <div class="post-nav-prev post-nav-item">
-              
-                <a href="/Hexo中Markdown语法使用/" rel="prev" title="Hexo中Markdown语法使用">
-                  Hexo中Markdown语法使用 <i class="fa fa-chevron-right"></i>
-                </a>
               
             </div>
           </div>
@@ -463,7 +470,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#tarjan求强连通分量"><span class="nav-number">1.</span> <span class="nav-text">tarjan求强连通分量</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-引子"><span class="nav-number">1.1.</span> <span class="nav-text">1. 引子</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-tarjan"><span class="nav-number">1.2.</span> <span class="nav-text">2. tarjan</span></a></li></ol></li></ol></div>
         
       </div>
       <!--/noindex-->
